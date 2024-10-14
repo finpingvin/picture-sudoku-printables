@@ -27,10 +27,10 @@ svg {
     max-height: 100vw;
   }
   #new-puzzle {
-    display: none;
+    display: none !important;
   }
   .link {
-    display: none;
+    display: none !important;
   }
 }
 
