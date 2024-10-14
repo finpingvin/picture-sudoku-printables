@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6x6 Sudoku Template</title>
+    <link href="sudoku.css" rel="stylesheet" />
+  </head>
+  <body>
+    <table id="sudoku-grid"></table>
+    <a href="index.html" class="link">Generate sudoku</a>
+    <script src="sudoku.js"></script>
+    <script>
+      const images = [
+        "./cow.png",
+        "./girl.png",
+        "./grass.png",
+        "./green_creeper.png",
+        "./pig.png",
+        "./skeleton.png",
+      ];
+
+      generateTemplate({ images });
+    </script>
+  </body>
+</html>

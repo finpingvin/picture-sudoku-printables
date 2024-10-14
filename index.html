@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6x6 Sudoku Generator</title>
+    <link href="sudoku.css" rel="stylesheet" />
+  </head>
+  <body>
+    <table id="sudoku-grid"></table>
+    <button id="new-puzzle" onclick="onGeneratePuzzle()">
+      Generate New Puzzle
+    </button>
+    <a href="template.html" class="link">Print template</a>
+    <script src="sudoku.js"></script>
+    <script>
+      const images = [
+        "./cow.png",
+        "./girl.png",
+        "./grass.png",
+        "./green_creeper.png",
+        "./pig.png",
+        "./skeleton.png",
+      ];
+
+      function onGeneratePuzzle() {
+        generateSudoku({ images });
+      }
+
+      // Generate initial Sudoku puzzle when the page loads
+      generateSudoku({ images });
+    </script>
+  </body>
+</html>
